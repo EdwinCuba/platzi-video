@@ -22,6 +22,7 @@
     text-align: right;
     position: absolute;
     right: 30px;
+    padding-top: 10px;
 }
 .header__menu:hover ul, ul:hover{
     display: block;

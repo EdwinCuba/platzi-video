@@ -43,7 +43,8 @@
 }
 
 .carousel-item__details--img {
-  width: 20px;  
+  width: 20px;
+  margin-right: 10px;  
 }
 
 .carousel-item:hover .carousel-item__details {
