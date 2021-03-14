@@ -8,7 +8,7 @@ import CarouselItem from '../components/CarouselItem.jsx'
 import Footer from '../../../assets/templates/Footer.jsx';
 import useInitialState from '../../../hooks/useInitialState.js'
 
-const App = () => {
+const Home = () => {
     const API = "http://localhost:3000/initalState";
     const initialState = useInitialState(API);
 
@@ -16,7 +16,7 @@ const App = () => {
 
         initialState.length === 0 ? <h1>Cargando...</h1> : (
 
-            <div className="App">
+            <div className="Home">
                 <Header />
                 <main>
                     <Search />
@@ -47,4 +47,4 @@ const App = () => {
     );
 }
 
-export default App;
+export default Home;
