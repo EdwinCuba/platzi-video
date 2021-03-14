@@ -1,75 +1,3 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
-  width: 100%;
-  color: white;
-}
-.header__img {
-  margin-left: 30px;
-  width: 200px;
-}
-.header__menu {
-  margin-right: 30px;
-}
-.header__menu ul {
-  display: none;
-  list-style: none;
-  margin: 0 0 0 0;
-  padding: 0;
-  width: 110px;
-  text-align: right;
-  position: absolute;
-  right: 30px;
-  padding-top: 10px;
-}
-.header__menu ul li {
-  margin-bottom: 5px;
-}
-.header__menu:hover ul,
-ul:hover {
-  display: block;
-}
-.header__menu li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.6rem;
-}
-.header__menu li a:hover {
-  text-decoration: underline;
-}
-.header__menu--profile {
-  align-items: center;
-  display: flex;
-  cursor: pointer;
-}
-.header__menu--profile img {
-  margin-right: 8px;
-  width: 40px;
-}
-.header__menu--profile p{
-  font-size: 1.6rem;
-}
-
-.footer {
-    align-items: center;
-    display: flex;
-    height: 100px;
-    width: 100%;
-  }
-  
-  .footer a {
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-    padding-left: 30px;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
 .login__container{
   width: 350px;
   border: 2px solid white;
@@ -146,6 +74,8 @@ ul:hover {
   margin-top: 10px;
   font-size: 1.2rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 .login__container--social-media div img{
   margin-right: 5px;
@@ -162,24 +92,4 @@ ul:hover {
   font-size: 1.3rem;
   font-weight: bold;
   margin-left: 3px;
-}
-html{
-    font-size: 62.5%;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: 'Muli', 'sans-serif';
-    background: linear-gradient(#21c08b, #8f57fd);
-}
-
-.login-form{
-    width: 100%;
-    display: flex;
-    padding: 25px;
-    justify-content: center;
 }

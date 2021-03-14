@@ -1,13 +1,13 @@
 import React from 'react';
-import '../assets/styles/components/Header.css';
+import '../styles/Header.css';
 
 const Header = () => {
-    return(
+    return (
         <header className="header">
-            <img className="header__img" src="https://github.com/platzi/curso-frontend-escuelajs/blob/master/platzi-video/curso-frontend-developer/assets/logo-platzi-video-BW2.png?raw=true" alt="Platzi Video" />
+            <img className="header__img" src="/assets/static/logo-platzi-video-BW2.png" alt="Platzi Video" />
             <div className="header__menu">
                 <div className="header__menu--profile">
-                    <img src="https://github.com/platzi/curso-frontend-escuelajs/blob/master/platzi-video/curso-frontend-developer/assets/user-icon.png?raw=true" alt="profile" />
+                    <img src="/assets/static/user-icon.png" alt="profile" />
                     <p>Perfil</p>
                 </div>
                 <ul>
