@@ -26,6 +26,8 @@
   border: 0;
   border-bottom: 2px solid white; 
   margin-top: 40px;
+  outline: none;
+  color: white;
 }
 ::placeholder{
   color: white;
