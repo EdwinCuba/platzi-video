@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import twitterIcon from '../../../assets/static/twitter-icon.png';
+import googleIcon from '../../../assets/static/google-icon.png';
 import '../assets/styles/components/LoginForm.css'
 
 const LoginForm = () => {
@@ -17,10 +20,14 @@ const LoginForm = () => {
         </div>
       </form>
       <section className="login__container--social-media">
-        <div><img src="/assets/static/google-icon.png" /> Inicia sesión con Google</div>
-        <div><img src="/assets/static/twitter-icon.png" /> Inicia sesión con Twitter</div>
+        <div><img src={googleIcon} /> Inicia sesión con Google</div>
+        <div><img src={twitterIcon} /> Inicia sesión con Twitter</div>
       </section>
-      <p className="login__container--register">No tienes ninguna cuenta <a href="">Regístrate</a></p>
+      <p className="login__container--register">No tienes ninguna cuenta
+        <Link to="/register">
+          Regístrate
+        </Link>
+      </p>
     </section>
   )
 }

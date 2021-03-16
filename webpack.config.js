@@ -33,6 +33,17 @@ module.exports = {
                     MiniCSSExtractPlugin.loader,
                     'css-loader'
                 ]
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: 'assets/static/[name].[ext]'
+                        }
+                    }
+                ]
             }
         ]
     },
@@ -43,14 +54,15 @@ module.exports = {
         }),
         new MiniCSSExtractPlugin({
             filename: './assets/style/[name].css'
-        }),
-        new CopyWebpackPlugin({
-            patterns: [
-                { from: './src/assets/static', to: 'assets/static' }
-            ]
         })
+        // new CopyWebpackPlugin({
+        //     patterns: [
+        //         { from: './src/assets/static', to: 'assets/static' }
+        //     ]
+        // })
     ],
     devServer: {
+        historyApiFallback: true,
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
         port: 9000

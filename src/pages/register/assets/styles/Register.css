@@ -5,8 +5,7 @@ html{
 * {
   box-sizing: border-box;
 }
-body {
-  margin: 0;
+.Register {
   font-family: 'Muli', 'sans-serif';
   background: linear-gradient(#21c08b, #8f57fd);
   background-repeat: no-repeat;

@@ -6,8 +6,7 @@ html{
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
+.Login{
     font-family: 'Muli', 'sans-serif';
     background: linear-gradient(#21c08b, #8f57fd);
 }

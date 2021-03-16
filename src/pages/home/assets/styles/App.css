@@ -1,9 +1,13 @@
 * {
     box-sizing: border-box;
 }
-
-body {
+body{
     margin: 0;
+}
+.Home{
     font-family: 'Muli', 'sans-serif';
-    background-color: #8f57fd;
+    background: #8f57fd;
+}
+html{
+    font-size: 62.5%;
 }

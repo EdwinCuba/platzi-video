@@ -1,5 +1,6 @@
 import React from 'react';
-import '../assets/styles/components/RegisterForm.css'
+import { Link } from 'react-router-dom';
+import '../assets/styles/components/RegisterForm.css';
 
 const RegisterForm = () => {
   return (
@@ -11,7 +12,9 @@ const RegisterForm = () => {
         <input className="input" type="password" placeholder="Contraseña" />
         <button className="button">Registrarme</button>
       </form>
-      <a className="redirect-to-login" href="">Iniciar sesión</a>
+      <Link to="/login" className="redirect-to-login">
+        Iniciar sesión
+      </Link>
     </section>
   );
 
