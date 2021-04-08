@@ -3,16 +3,17 @@
     display: flex;
     height: 100px;
     width: 100%;
-  }
-  
-  .footer a {
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-    padding-left: 30px;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
+    background-color: #8f57fd;
+}
+
+.footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
